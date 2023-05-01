@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
-body {
-    font-family: Roboto;
-}
-h1 {
-    font-family: 'Rock Salt';
-}
-main img {
-    width: 200px;
-    height: auto;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Konkhmer+Sleokchher&family=Open+Sans:ital,wght@0,600;1,500;1,600&family=Oswald:wght@500&display=swap');
+
+main{
+    font-family: 'Konkhmer Sleokchher', cursive;
 }
