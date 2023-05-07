@@ -51,9 +51,32 @@ nav a:hover {
     background-color: var(--nav-hover-background-color)
 }
 
-.hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/fast_water.jpg");
+.hero-image img{
     display: block;
     width: 100%;
     height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, +5%);
+    color: black;
+  }
+
+.hero-text article{
+    text-align: left;
+    position: relative;
+    transform: translate(+30%, 0%);
+}
+
+.hero-text article image{
+    width: 20%;
+    position: right;
 }
