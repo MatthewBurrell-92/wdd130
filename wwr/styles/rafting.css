@@ -21,6 +21,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header{
+    display: flex;
+    justify-content: space-around;
     padding: 20px;
     background-color: var(--accent1-color)
 }
@@ -34,6 +36,7 @@ nav {
     background-color: var(--nav-hover-background-color);
     font-size: 1.2rem;
     display: flex;
+    justify-content: space-around;
 }
 
 nav a {
@@ -86,9 +89,18 @@ nav a:hover {
     justify-content: space-between;
 }
 
-.five{
+.five h2{
+    position: relative;
+    text-align: center;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    justify-content: center;
+}
+.five section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.five section img{
+    height: 100px;
+    width: auto;
 }
