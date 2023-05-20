@@ -3,3 +3,7 @@ form{
     padding: 20px;
     background-color: grey;
 }
+button{
+    display: flex;
+    justify-content: space-around;
+}
