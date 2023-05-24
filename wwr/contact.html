@@ -29,6 +29,52 @@
             <div id="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d669.4799479673719!2d-111.7845231175173!3d43.82628652275649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1684614247005!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+            <div class="employees">
+                <section></section>
+                    <figure>
+                        <img src="images/happy_employee_1.jpg" alt="happy-employee" width="100">
+                        <!--https://unsplash.com/s/photos/happy-employee-->
+                        <figcaption>James is the happy beard guy!</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/happy_employee_2.jpg" alt="happy-employee" width="100">
+                        <!--https://www.quantumworkplace.com/future-of-work/how-to-keep-employees-happy-->
+                        <figcaption>Ian is a master of rafting, and website design!</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/happy_employee_3.png" alt="happy-employee" width="100">
+                        <!--https://www.gnty.com/savings/personal-savings/-->
+                        <figcaption>Jessica is our manager, she has all the answers!</figcaption>
+                    </figure>
+                </section>
+            </div>
+            <form>
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Email Address:</td>
+                        <td><input type="text" id="emailAddress"></td>
+                    </tr>
+                    <tr>
+                        <td>Choose one:</td>
+                        <td><select id="purpose">
+                                <option id="inquiry">General Inquiry</option>
+                                <option id="reservation">Reservation Question</option>
+                                <option id="suggestion">Website Suggestion</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Message:</td>
+                        <td><textarea id="message" rows="4" cols="40"></textarea></td>
+                    </tr>
+                </table>
+                <p>I would like to subscribe to the monthly email list: <input type="checkbox" id="subscribeYes"></p>
+                <button type="button" id="submit">Submit</button>
+            </form>
         </main>
         <footer>
             <p>&#169 2023 | Matthew Burrell | White Water Rafting</p>

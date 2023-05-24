@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Open+Sans&display=swap');
 
 :root{
-    --primary-color: #0099B8;
+    --primary-color: #053b46;
     --secondary-color: #13293D;
     --accent1-color: #ef451a;
     --accent2-color: #E8F1F2;
@@ -10,9 +10,14 @@
     --paragraph-font: 'Merriweather', serif;
 
     --nav-background-color: #8c6969;
-    --nav-link-color: #3A4E48;
-    --nav-hover-link-color: #6A7B76;
+    --nav-link-color: #000000;
+    --nav-hover-link-color: #24302d;
     --nav-hover-background-color: #8B9D83;
+}
+
+body {
+    width: 1000px;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,8 +26,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 150px auto;
     padding: 20px;
     background-color: var(--accent1-color)
 }
@@ -72,15 +77,15 @@ nav a:hover {
     position: absolute;
     display: flex;
     top: 20%;
-    left: 8px;
+    margin: 20px;
     background: rgba(204, 204, 204, 0.5);
     color: black;
     text-align: center;
 }
 .left img{
     position: relative;
-    height: auto;
-    width: 100px;
+    width: 200px;
+    padding: 5px;
 }
 .grid {
     display: grid;
@@ -103,9 +108,29 @@ nav a:hover {
 .five section img{
     height: 100px;
     width: auto;
+    padding: 10px;
+}
+
+figure{
+    margin:0;
 }
 
 footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--nav-hover-background-color);
+    margin-top: 10%;
+}
+
+form{
+    padding:5px;
+}
+form p{
+    padding:0px;
+}
+
+.employees section{
     display: flex;
-    flex: end;
+    justify-content: space-around;
+    width: 100%;
 }
