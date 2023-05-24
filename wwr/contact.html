@@ -19,7 +19,7 @@
             </header>
         </div>
         <main>
-            <hi>Contact Us Information:</hi>
+            <h1>Contact Us Information:</h1>
             <h3>Address: 22 West Main Street, Rexburg, Id 83004</h3>
             <p>We are located in the Taco Bell. Just walk in and shout, "I want to rent a raft and stuff" and someone will come up to help you in a few minutes. If more than five minutes have passed, please keep shouting that, we'll hear you eventually.</p>
             <h3>Phone Number: 208-867-5309</h3>
@@ -51,29 +51,27 @@
             <form>
                 <table>
                     <tr>
-                        <td>Name:</td>
-                        <td><input type="text" id="name"></td>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name"></td>
                     </tr>
                     <tr>
-                        <td>Email Address:</td>
-                        <td><input type="text" id="emailAddress"></td>
+                        <td><label for="emailAddress">Email address:</label></td>
+                        <td><input type="text" id="emailAddress" name="emailAddress"></td>
                     </tr>
                     <tr>
-                        <td>Choose one:</td>
-                        <td><select id="purpose">
-                                <option id="inquiry">General Inquiry</option>
-                                <option id="reservation">Reservation Question</option>
-                                <option id="suggestion">Website Suggestion</option>
-                            </select>
+                        <td><label for="purpose">Choose one:</label></td>
+                        <td><input type="radio" id="inquiry" name="inquiry"><label for="inquiry">General Inquiry</label><br>
+                            <input type="radio" id="reservation" name="reservation"><label for="reservation">Reservation Request</label><br>
+                            <input type="radio" id="suggestion" name="suggestion"><label for="suggestion">Website Suggestion</label><br>
                         </td>
                     </tr>
                     <tr>
-                        <td>Message:</td>
-                        <td><textarea id="message" rows="4" cols="40"></textarea></td>
+                        <td><label for="message">Message:</label></td>
+                        <td><textarea id="message" rows="4" cols="40" name="message"></textarea></td>
                     </tr>
                 </table>
-                <p>I would like to subscribe to the monthly email list: <input type="checkbox" id="subscribeYes"></p>
-                <button type="button" id="submit">Submit</button>
+                <p><label for="checkbox">I would like to subscribe to the monthly email list:</label><input type="checkbox" id="subscribeYes"></p>
+                <button type="button" id="submit" name="submit button"><label for="submit">Submit</label></button>
             </form>
         </main>
         <footer>
