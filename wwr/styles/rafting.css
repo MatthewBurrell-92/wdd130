@@ -16,7 +16,7 @@
 }
 
 body {
-    width: 1000px;
+    width: 800px;
     margin: 0 auto;
 }
 
@@ -124,7 +124,9 @@ footer{
 
 form{
     padding:5px;
+    background-color:#8ca39d
 }
+
 form p{
     padding:0px;
 }
@@ -132,5 +134,5 @@ form p{
 .employees section{
     display: flex;
     justify-content: space-around;
-    width: 100%;
+    padding: 20px;
 }
