@@ -69,7 +69,6 @@ nav a:hover {
     left: 0;
     right: 0;
     text-align: center;
-    transform: translate (-50%, -50%);
     background: rgba(122, 241, 136, 0.5)
 }
 
@@ -84,6 +83,7 @@ nav a:hover {
 }
 .left img{
     position: relative;
+    float: right;
     width: 200px;
     padding: 5px;
 }
@@ -93,6 +93,10 @@ nav a:hover {
     justify-content: space-around;
 }
 
+.five{
+    position: relative;
+}
+
 .five h2{
     position: relative;
     text-align: center;
@@ -100,6 +104,7 @@ nav a:hover {
     justify-content: center;
 }
 .five section{
+    position: relative;
     display: flex;
     justify-content: space-around;
     width: 100%;
