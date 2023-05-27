@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -32,7 +34,7 @@ aside {
     text-align: center;
     position: relative;
 }
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
 aside h2 {
     position: absolute;
     top: 40px;
@@ -40,7 +42,7 @@ aside h2 {
     font-family: 'Secular One', sans-serif;
 }
 aside img {
-    width: 200 px;
+    width: 200px;
     height: auto;
     top: 3000px;
 }
@@ -76,7 +78,7 @@ aside {
 }
 
 header, .grid, footer{
-    max-width: 840 px;
+    max-width: 840px;
     margin: 0 auto;
 }
 
