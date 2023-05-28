@@ -51,6 +51,7 @@ main img {
     height: auto;
     float: right;
 }
+
 p { padding: 0;}
 footer {
     margin-top: 1em;
@@ -113,4 +114,14 @@ aside{
     position: relative;
     grid-column: 1/2;
     grid-row: 1/2;
+}
+
+main figure#top img{
+    grid-column: 3/3;
+}
+
+main figure#bottom img{
+    width: 100px;
+    height: auto;
+    float: right;
 }

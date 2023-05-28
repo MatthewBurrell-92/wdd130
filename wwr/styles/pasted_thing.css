@@ -1,0 +1,29 @@
+.trips {
+    display: inline-grid;
+    grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] auto [five] 50px [six] 40px [end];
+    grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] 100px [fourth-line] auto [last-line];
+}
+
+.trips main figure#top img{
+    max-width: 150px;
+    height: auto;
+    grid-column-start: col4-start;
+    grid-column-end: six;
+    grid-row-start: row1-end;
+    grid-row-end: third-line;
+}
+
+main figure#middle img{
+    max-width: 150px;
+    height: auto;
+    grid-column-start: col4-start;
+    grid-column-end: six;
+    grid-row-start: third-line;
+    grid-row-end: fourth-line;
+}
+
+main figure#bottom img{
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
