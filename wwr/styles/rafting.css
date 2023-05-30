@@ -72,6 +72,7 @@ nav a:hover {
 
 .hero{
     position: relative;
+    grid-row: 2/5;
 }
 
 .centered {
@@ -161,4 +162,8 @@ main div{
 
 aside table{
     grid-column: 1/5;
+}
+
+aside{
+    grid-row: 3/4;
 }
