@@ -28,19 +28,9 @@ h1, h2, h3, h4, h5, h6 {
 
 header{
     display: grid;
-    padding: 20px;
-    background-color: var(--accent1-color);
-    grid-column: span 5;
     grid-template-columns: 150px auto;
-}
-
-footer{
-    background-color: var(--nav-hover-background-color);
-    margin-top: 10%;
-    grid-column: span 5;
-    grid-row: 5/5;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    padding: 20px;
+    background-color: var(--accent1-color)
 }
 
 p{
@@ -127,11 +117,15 @@ nav a:hover {
     padding: 10px;
 }
 
-figure img{
+figure{
     margin:0;
-    width: 100%;
-    grid-column: span 3;
+}
 
+footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--nav-hover-background-color);
+    margin-top: 10%;
 }
 
 form{
@@ -149,16 +143,43 @@ form p{
     padding: 20px;
 }
 
-main {
-    grid-column: 3/5;
-    grid-row: span 3;
+.trips {
+    display: inline-grid;
+    grid-template-columns: repeat(6, 20px [col-start]);
+    grid-template-rows: repeat(7, 20px [row-start]);
 }
 
-main div{
-    grid-column: span 5;
-    grid-row: 2/5;
+.trips main figure#top img{
+    max-width: 150px;
+    height: auto;
+    grid-column-start: col-start 4;
+    grid-column-end: col-start 7;
+    grid-row-start: row-start 2;
+    grid-row-end: row-start 3;
 }
 
-aside table{
-    grid-column: 1/5;
+.trips main figure#middle img{
+    max-width: 150px;
+    height: auto;
+    grid-column-start: col-start 4;
+    grid-column-end: col-start 7;
+    grid-row-start: row-start 3;
+    grid-row-end: row-start 4;
+}
+
+.trips main figure#bottom img{
+    grid-column-start: col-start 2;
+    grid-column-end: col-start 7;
+    grid-row-start: row-start 4;
+    grid-row-end: row-start 5;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.trips aside{
+    grid-column-start: col-start 1;
+    grid-column-end: col-start 4;
+    grid-row-start: row-start 2;
+    grid-row-end: row-start 4;
 }
