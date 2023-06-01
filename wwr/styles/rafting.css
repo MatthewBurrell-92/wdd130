@@ -12,11 +12,11 @@
     --nav-background-color: #8c6969;
     --nav-link-color: #000000;
     --nav-hover-link-color: #24302d;
-    --nav-hover-background-color: #8B9D83;
+    --nav-hover-background-color: #aabda2;
 }
 
 body {
-    width: auto;
+    width: 800px;
     margin: 0 auto;
     grid-template-columns: auto [column-1] 100px [column-2] 100px [column-3] 100px [column-4] auto [column-last];
     grid-template-rows: auto [row-1] 100px [row-2] 100px [row-3] 100px [row-5] auto [row-last];
@@ -28,7 +28,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header{
-    width: 100%;
     margin: 0 auto;
     display: grid;
     padding: 20px;
@@ -80,6 +79,12 @@ nav a:hover {
     grid-row: 2/5;
 }
 
+.hero img{
+    width:100%;
+}
+
+
+
 .centered {
     position: absolute;
     top: 10%;
@@ -104,6 +109,11 @@ nav a:hover {
     width: 200px;
     padding: 5px;
 }
+
+.heroLeft{
+    top: 40%;
+}
+
 .grid {
     display: grid;
     align-items: center;
@@ -128,16 +138,16 @@ nav a:hover {
 }
 
 .five section img{
-    height: 100px;
+    height: 90px;
     width: auto;
-    padding: 10px;
 }
 
 figure img{
     margin:0;
     width: 100%;
-    grid-column: span 3;
-
+}
+figcaption {
+    text-align: center;
 }
 
 form{
@@ -167,15 +177,25 @@ main {
     grid-row: span 3;
 }
 
+.tripsMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+figure{
+    margin: 0;
+}
+
+aside img{
+    float:right;
+}
+
 main div{
     grid-column: span 5;
     grid-row: 2/5;
 }
 
-aside table{
-    grid-column: 1/5;
-}
-
-aside{
-    grid-row: 3/4;
+.bottom {
+    grid-column: 1/3;
 }
